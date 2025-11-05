@@ -40,7 +40,7 @@ public class MarketApiClient : IMarketApiClient
             response.EnsureSuccessStatusCode();
             
             return await response.Content.ReadFromJsonAsync<List<StockDto>>(_jsonOptions, cancellationToken) 
-                   ?? new List<StockDto>();
+                   ?? [];
         }
         catch (Exception ex)
         {

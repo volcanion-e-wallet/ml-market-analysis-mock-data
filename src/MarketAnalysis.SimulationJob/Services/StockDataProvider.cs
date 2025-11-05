@@ -11,8 +11,8 @@ public class StockDataProvider : IStockDataProvider
 {
     public List<CreateStockRequest> GetSampleStocks()
     {
-        return new List<CreateStockRequest>
-        {
+        return
+        [
             new() { Symbol = "AAPL", Name = "Apple Inc.", Exchange = "NASDAQ", Sector = "Technology", Industry = "Consumer Electronics", InitialPrice = 175.50m },
             new() { Symbol = "GOOGL", Name = "Alphabet Inc.", Exchange = "NASDAQ", Sector = "Technology", Industry = "Internet Services", InitialPrice = 140.25m },
             new() { Symbol = "MSFT", Name = "Microsoft Corp.", Exchange = "NASDAQ", Sector = "Technology", Industry = "Software", InitialPrice = 380.75m },
@@ -23,6 +23,6 @@ public class StockDataProvider : IStockDataProvider
             new() { Symbol = "JPM", Name = "JPMorgan Chase & Co.", Exchange = "NYSE", Sector = "Financial", Industry = "Banks", InitialPrice = 185.40m },
             new() { Symbol = "V", Name = "Visa Inc.", Exchange = "NYSE", Sector = "Financial", Industry = "Credit Services", InitialPrice = 265.90m },
             new() { Symbol = "WMT", Name = "Walmart Inc.", Exchange = "NYSE", Sector = "Consumer Defensive", Industry = "Retail", InitialPrice = 165.75m }
-        };
+        ];
     }
 }
